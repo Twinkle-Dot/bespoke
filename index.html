@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bespoke &mdash; High Fashion for Men</title>
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="css/build.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Raleway:wght@300;400;500;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e3a08b5aeb.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript -->
+    <script defer src="index.js"></script>
+  </head>
+  <body class="text-black">
+<div class="nav-cont">
+
+  <nav
+  class="container relative mx-auto pt-6 pb-10 px-12 flex items-center justify-between font-raleway bg-gray-900 text-washedGray"
+      >
+      <span class="text-2xl md:text-5xl font-extralight">bespoke</span>
+      <div class="hidden navbar space-x-16 text-lg tracking-widest lg:flex">
+        <a href="#hero" class="nav-link">home</a>
+        <a href="#about" class="nav-link">about us</a>
+        <a href="#testimonials" class="nav-link">testimonials</a>
+        <a href="#contact" class="nav-link">contact</a>
+      </div>
+
+      <!-- Hamburger Icon -->
+      <button id="menu-btn" class= "block hamburger lg:hidden focus:outline-none">
+        <span class="hamburger-top translate-y-2 md:w-10 md:translate-y-3"></span>
+        <span class="hamburger-md md:w-10"></span>
+        <span class="hamburger-bt translate-y-4 md:w-10 md:translate-y-6"></span>
+      </button> 
+      
+      <!-- Menu -->
+      
+        <div class="lg:hidden md:px-16 hamburger-menu bg-gray-900 text-washedGray py-8 px-8 space-y-6 text-right">
+          <a href="#hero" class="nav-link">home</a>
+          <a href="#about" class="nav-link">about us</a>
+          <a href="#testimonials" class="nav-link">testimonials</a>
+          <a href="#contact" class="nav-link">contact</a>  
+        </div>
+      </div>
+
+      </div>
+      </nav>
+      
+    <section id="hero">
+      <!-- Container -->
+      <div
+        class="container font-merri mx-auto flex flex-col-reverse space-y-0 items-center justify-between px-12 py-10 bg-lightGray md:flex-row md:space-y-0"
+      >
+        <!-- Left item -->
+        <div class="flex  flex-col space-y-0 md:w-1/2 md:text-left">
+          <h1
+            class="text-2xl text-center font-bold mb-6 mt-12 md:text-left md:text-3xl md:mt-0 lg:text-5xl lg:mb-12 xl:text-6xl lg:w-3/4 xl:w-full"
+          >
+            Be the best version of yourself.
+          </h1>
+          <p
+            class="text-sm text-center md:text-left leading-relaxed md:text-base xl:text-xl md:w-11/12 xl:w-full"
+          >
+            Professional image consultancy to ensure you make positive lasting
+            impressions wherever you go.
+          </p>
+          <br>
+          <br>
+          <div class="contact-btn flex items-center justify-center md:justify-start ">
+            <a href="#contact" class="py-2 px-4 text-lg border-2 border-black cursor-pointer tracking-wider hover:bg-gray-900 hover:text-washedGray ease-in-out duration-300">Contact Us</a>
+          </div>
+        </div>
+
+        <!-- Hero Image -->
+        <div class="max-w-md">
+          <img src="images/hero2.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about">
+      <!-- Container -->
+      <div class="container px-12 py-16 mx-auto font-merri bg-washedGray">
+        <h2 class="text-2xl text-center mb-12 md:text-3xl lg:text-4xl">
+          About Us
+        </h2>
+        <p
+          class="text-sm mx-auto leading-relaxed text-left md:w-1/2 md:text-base"
+        >
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec orci
+          est, sodales et tincidunt et, pharetra nec lacus. Proin elementum, ex
+          a luctus cursus, libero nibh finibus ex, eget pharetra metus metus
+          sagittis enim. Donec gravida tincidunt vulputate. Vestibulum bibendum
+          ultrices venenatis. Phasellus sed porta dolor. In hac habitasse platea
+          dictumst. Aenean ultrices non lorem a hendrerit. Sed sit amet tempor
+          lectus.
+          <br />
+          <br />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor
+          arcu in dui condimentum, vel convallis turpis hendrerit. Sed eget
+          tincidunt ante. Proin malesuada tortor eu lorem posuere, non aliquam
+          elit fermentum. Quisque fermentum tempus ligula, nec tempus risus
+          ultricies in.
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide relative"
+        data-bs-ride="carousel"
+      >
+        <div
+          class="hidden carousel-indicators absolute right-0 bottom-16 left-0 justify-center p-0 mb-4 xl:flex"
+        >
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner relative w-full overflow-hidden">
+          <div class="carousel-item active float-left w-full">
+            <div class="container mx-auto px-12 py-16 bg-washedGray font-merri">
+              <div
+                class="container mx-auto p-6 px-2 bg-gray-900 flex flex-col space-y-6 items-center justify-between md:flex-row md:space-x-6 md:w-11/12 md:px-12 md:py-10"
+              >
+                <div class="block w-1/2 md:max-w-xs">
+                  <img src="images/img1.jpg" alt="" />
+                </div>
+
+                <div class="md:max-w-xl px-4 text-lightGray">
+                  <blockquote class="text-sm mb-4 md:mb-6 md:text-base">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    auctor arcu in dui condimentum, vel convallis turpis
+                    hendrerit. Sed eget tincidunt ante.
+                  </blockquote>
+                  <span class="text-xs font-thin md:text-sm"
+                    ><em
+                      >&mdash; Customer Name, Manager at Company Ltd.</em
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item float-left w-full">
+            <div class="container mx-auto px-12 py-16 bg-washedGray font-merri">
+              <div
+                class="container mx-auto p-6 px-2 bg-gray-900 flex flex-col space-y-6 items-center justify-between md:flex-row md:space-x-6 md:w-11/12 md:px-12 md:py-10"
+              >
+                <div class="block w-1/2 md:max-w-xs">
+                  <img src="images/img2.jpg" alt="" />
+                </div>
+      
+                <div class="md:max-w-xl px-6 text-lightGray">
+                  <blockquote class="text-sm mb-4 md:mb-6 md:text-base">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    auctor arcu in dui condimentum, vel convallis turpis hendrerit.
+                    Sed eget tincidunt ante.
+                  </blockquote>
+                  <span class="text-xs font-thin md:text-sm"
+                    ><em>&mdash; Customer Name, Manager at Company Ltd.</em></span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item float-left w-full">
+            <div class="container mx-auto px-12 py-16 bg-washedGray font-merri">
+              <div
+                class="container mx-auto p-6 px-2 bg-gray-900 flex flex-col space-y-6 items-center justify-between md:flex-row md:w-11/12 md:px-12 md:py-10"
+              >
+                <div class="block w-1/2 md:max-w-xs">
+                  <img src="images/img3.jpg" alt="" />
+                </div>
+      
+                <div class="md:max-w-xl px-6 text-lightGray">
+                  <blockquote class="text-sm mb-4 md:mb-6 md:text-base">
+                    “Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
+                    auctor arcu in dui condimentum, vel convallis turpis hendrerit.
+                    Sed eget tincidunt ante.
+                  </blockquote>
+                  <span class="text-xs font-thin md:text-sm"
+                    ><em>&mdash; Customer Name, Manager at Company Ltd.</em></span
+                  >
+                </div>
+              </div>
+            </div>
+        </div>
+        <button
+          class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0 xl:-left-14"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+        <i class="fa-solid fa-chevron-left text-gray-800 fa-2xl bg-no-repeat" aria="true"></i>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0 xl:-right-14"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+        <i class="fa-solid fa-chevron-right text-gray-800 fa-2xl"></i>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer  -->
+    <footer id="contact">
+      <div class="font-raleway text-center bg-lightGray container px-12 py-10 flex flex-col space-y-6 md:flex-row md:text-left justify-evenly  items-center">
+        <div class="flex flex-col space-y-12 mb-6 md:items-center md:mb-0">
+          <span class="text-2xl md:text-5xl font-extralight mb-4">bespoke</span>
+          <div class="flex flex-row space-x-6">
+            <i class="fa-brands fa-instagram fa-2xl"></i>
+            <i class="fa-brands fa-facebook fa-2xl"></i>
+            <i class="fa-brands fa-twitter fa-2xl"></i>
+          </div>
+        </div>
+        <!-- Contact Details -->
+
+          <div class="flex text-xs md:text-base flex-col space-y-3">
+            <span>Bespoke Consulting Ltd.</span>
+            <span>WhatsApp: +255 12345689</span>
+            <span>Email: bespoke@email.com</span>
+            <span>
+              Copyright 2022. All rights reserved.
+            </span>
+          </span>
+        </div>
+        
+        <!-- Address -->
+        <div class="flex text-xs md:text-base flex-col space-y-3">
+          <span>Address Line 1</span>
+          <span>Address Line 2</span>
+          <span>P.O Box: 12340</span>
+          <span>City, Country</span>
+        </div>
+      </div>
+      </div>
+
+    </footer>
+
+    <script src="node_modules/tw-elements/dist/js/index.min.js"></script>
+  </body>
+</html>
